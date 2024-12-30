@@ -52,8 +52,8 @@ You will need a way to compile C++ programs using CMake. You are free to use wha
 
 Follow the instructions for your operating system below:
 
-- [Windows and Visual Studio 2022](./windows-vs.md)
-- [Mac and Visual Studio Code](./mac-vscode.md)
+- [Windows and Visual Studio 2022](./ide-windows-vs.md)
+- [Mac and Visual Studio Code](./ide-mac-vscode.md)
 
 Once you have your IDE installed and working, come back here and continue with the instructions below.
 
