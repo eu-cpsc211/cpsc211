@@ -201,7 +201,7 @@ Classes are a mechanism for abstraction. They can hide underlying details of how
 
 ## Additional exercises
 
-Use these questions and exercises to prepare for quizzes and exams.
+Use these questions and exercises to help prepare for quizzes and exams.
 
 ### Questions
 
