@@ -22,9 +22,7 @@ Click the **Use this template** button and select **Create a new repository**.
 
 ![](./img/github-template-create-repo.png)
 
-Set the owner of the new repository to your GitHub account. Pick a name for the new repository.
-
-You can make this a private repository that only you can see.
+Set the owner of the new repository to your GitHub account. Pick a name for the new repository. You can make this a private repository that only you can see.
 
 ![](./img/github-template-create-repo-2.png)
 
@@ -32,7 +30,7 @@ You can make this a private repository that only you can see.
 
 Download and install the [GitHub Desktop](https://github.com/apps/desktop) app on your computer.
 
-Open the GitHub Desktop app and sign in. Follow the instructions in the app until you get the the **Let's get started** screen.
+Open the GitHub Desktop app and sign in. Follow the instructions in the app until you get to the **Let's get started** screen.
 
 ## 4. Clone your repository
 
