@@ -48,6 +48,20 @@ If the button does not say `example.exe`, click the arrow on the right side of t
 
 The program should build and run, and you should see the `Hello, world!` message printed to the terminal window.
 
+## Tip: Reconfigure CMake project
+
+If you start having trouble building your project (or if things start acting strangely), you can try to delete all build files and rebuild the project from scratch.
+
+Open your repository folder using File Explorer. You can also right-click on the folder in the Visual Studio Solution Explorer and click **Open Folder in File Explorer**.
+
+![](./img/vs-open-folder-in-file-explorer.png)
+
+Close Visual Studio. In the File Explorer, delete the `out` folder from your repository directory.
+
+![](./img/vs-delete-out.png)
+
+Re-open your repository folder in Visual Studio and try to build your project again.
+
 ## Continue quickstart guide
 
 Continue the [C++ quickstart guide](./README.md).
