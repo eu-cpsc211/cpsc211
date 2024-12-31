@@ -103,13 +103,9 @@ Select the Clang option from the list at the top of the window. If you don't see
 
 ![](./img/mac-vscode-cmake-tools-kit-clang.png)
 
-In the **CMake Tools** panel, find the **Build** section and click the button to change the build target.
+You can choose the launch and debug targets if the project has multiple programs being built.
 
-![](./img/mac-vscode-cmake-tools-build.png)
-
-Select the `hello-world` option from the list at the top of the window.
-
-![](./img/mac-vscode-cmake-tools-build-select.png)
+![](./img/mac-vscode-launch-target.png)
 
 ## Build and run
 
