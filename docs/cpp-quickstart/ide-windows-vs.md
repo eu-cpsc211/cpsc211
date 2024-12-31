@@ -2,6 +2,8 @@
 
 These instructions demonstrate how to set up and use Visual Studio 2022 on Windows.
 
+**If you are using a Mac, these are not the instructions you are looking for.**
+
 ## Install Visual Studio 2022 Community
 
 Download and install the _community_ edition of Visual Studio 2022 [here](https://visualstudio.microsoft.com/vs/community/). The community edition is free.
@@ -22,15 +24,15 @@ Open Visual Studio 2022. From the **Get Started** screen, click **Open a local f
 
 ![](./img/vs-open-folder.png)
 
-Find the folder to cloned your repository into and click **Select Folder**.
+Find the folder you cloned your repository into and click **Select Folder**.
 
 ![](./img/vs-open-folder-dialog.png)
 
-If you don't remember where the folder is, you can click the "Show in Explorer" button in GitHub Desktop. This will open the folder in File Explorer.
+If you don't remember where the folder is, you can click the **Show in Explorer** button in GitHub Desktop. This will open the folder in File Explorer.
 
 ![](./img/github-desktop-show-folder.png)
 
-Once you open the folder in Visual Studio, open the **Solution Explorer** panel. You should see all the files in your repository folder within the solution explorer. If you don't see any files in the folder, you've done something wrong.
+Once you open the folder in Visual Studio, open the **Solution Explorer** panel. You should see all the files from your repository in the Solution Explorer panel. If you don't see any files, you've done something wrong.
 
 ![](./img/vs-solution-explorer.png)
 

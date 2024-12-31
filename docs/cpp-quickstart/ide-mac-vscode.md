@@ -2,6 +2,8 @@
 
 These instructions demonstrate how to set up and use Visual Studio Code on Mac. The Clang compiler is used to compile C++ code.
 
+**If you are using Windows, these are not the instructions you are looking for.**
+
 ## Install Clang
 
 Check if Clang is installed on your Mac. To do this, open a terminal window and enter:
@@ -72,7 +74,7 @@ Find the folder where you cloned your repository into and click **Open**.
 
 ![](./img/mac-vscode-open-folder-dialog.png)
 
-Once the folder is open in VS Code, open the **Explorer** panel. You should see all the files in your repository folder within the Explorer panel. If you don't see any files in the folder, you've done something wrong.
+Once the folder is open in VS Code, open the **Explorer** panel. You should see all the files from your repository in the Explorer panel. If you don't see any files, you've done something wrong.
 
 ![](./img/mac-vscode-explorer.png)
 
