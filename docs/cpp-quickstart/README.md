@@ -1,6 +1,6 @@
 # C++ Quickstart: IDE and GitHub Setup
 
-After following this instructions in this guide, you will be able to:
+After following the instructions in this guide, you will be able to:
 
 - Clone a repository from GitHub to your computer.
 - Build and run C++ applications on your computer.
@@ -8,7 +8,7 @@ After following this instructions in this guide, you will be able to:
 
 ## 1. Create a GitHub account
 
-Go to [github.com](github.com) and create an account if you don't have one already.
+Go to [github.com](https://github.com) and create an account if you don't have one already.
 
 Accounts are free to create. You are not required to use your Evangel email address to sign up; however, if you associate your Evangel email address with your GitHub account, you can apply for GitHub Education [student benefits](https://education.github.com/pack) (it does not have to be the primary email address on the account).
 
