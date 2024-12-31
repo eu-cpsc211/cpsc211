@@ -36,9 +36,7 @@ In the Terminal app, execute the following command:
 cmake --version
 ```
 
-If CMake is installed correctly, this command will display the version of CMake you have installed.
-
-If you get an error that says something like "command not found", then you need to install CMake.
+If CMake is installed correctly, this command will display the version of CMake you have installed. If you get an error that says something like "command not found", then you need to install CMake.
 
 In the Terminal app, execute the following command:
 
@@ -54,29 +52,29 @@ Execute the following command to verify CMake is installed correctly:
 cmake --version
 ```
 
+![](./img/mac-vscode-cmake-version.png)
+
 ## Install Visual Studio Code
 
 Install [Visual Studio Code for Mac](https://code.visualstudio.com/docs/setup/mac). Make sure to copy the app into the Applications folder on your Mac.
 
 ## Open your project folder
 
-In the top menu, select **File** -> **Open folder**.
+Go back to the GitHub Desktop app. Click the **Open in Visual Studio Code** button to open your repository folder in VS Code. If you don't see that button, make sure the current repository is selected and the **Changes** tab is open.
 
-TODO: IMAGE
+![](./img/mac-vscode-open-in-vs.png)
 
-Find the folder to cloned your repository into and click **Select Folder**.
+Alternatively, you can open the folder directly in Visual Studio Code. In the top menu, select **File** -> **Open folder**.
 
-TODO: IMAGE
+![](./img/mac-vscode-open-folder.png)
 
-If you don't remember where the folder is, you can click the "Show in Explorer" button in GitHub Desktop. This will open the folder in File Explorer.
+Find the folder where you cloned your repository into and click **Open**.
 
-![](./img/github-desktop-show-folder.png)
+![](./img/mac-vscode-open-folder-dialog.png)
 
-Once you open the folder in Visual Studio, open the **Solution Explorer** panel. You should see all the files in your repository folder within the solution explorer. If you don't see any files in the folder, you've done something wrong.
+Once the folder is open in VS Code, open the **Explorer** panel. You should see all the files in your repository folder within the Explorer panel. If you don't see any files in the folder, you've done something wrong.
 
-TODO: IMAGE
-
-TODO: Open in VS Code from GitHub Desktop
+![](./img/mac-vscode-explorer.png)
 
 ## Install extensions
 
@@ -85,7 +83,9 @@ Open the **Extensions** panel in VS Code. Install the following two extensions:
 - C/C++ (search for `ms-vscode.cpptools`)
 - CMake Tools (search for `ms-vscode.cmake-tools`)
 
-TODO: IMAGE
+The screenshot below shows where to search for extensions to install.
+
+![](./img/mac-vscode-extension-cpp.png)
 
 ## Configure CMake
 
@@ -122,6 +122,14 @@ If the build succeeds, you will see something like "Build finished with exit cod
 Once the build succeeds, you can run the program by clicking the play button at the bottom of the VS Code window.
 
 ![](./img/mac-vscode-run.png)
+
+## Tip: Reconfigure CMake project
+
+If you start having trouble building your project (or if things start acting strangely), you can try to delete all build files and rebuild the project from scratch.
+
+![](./img/mac-vscode-delete-build.png)
+
+Then go back to the **Configure CMake** section above and follow the instructions to reconfigure the CMake project.
 
 ## Continue quickstart guide
 
