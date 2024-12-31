@@ -57,7 +57,7 @@ Once you have your IDE installed and working, come back here and continue with t
 
 ## 6. Edit the sample program
 
-Edit the `main.cpp` file and change edit the `"Hello, world!"` message to something else. For example:
+Edit the `main.cpp` file and edit the `"Hello, world!"` message to something else. For example:
 
 ```
 cout << "Hello, world! What a great day!" << endl;
@@ -71,9 +71,9 @@ Go back to the GitHub Desktop app. You will see your changes to `main.cpp` show 
 
 ![](./img/github-desktop-changes.png)
 
-Git allows us to track changes to files over time. It provides a log of changes to the files in the repository. To create our first entry in this log, we need to create a commit.
+Git is used to track changes to files over time. It provides a log of changes made in the repository. To create your first entry in the log, we need to create a _commit_.
 
-Enter a commit message in the box in the lower-left corner. This is a message indicating what changes were made and why.
+Enter a message in the box in the lower-left corner. This is a message indicating what changes were made and why.
 
 ![](./img/github-desktop-commit.png)
 
@@ -85,13 +85,13 @@ You can view the log of commits in your repository in the **History** tab in the
 
 ## 8. Push changes
 
-A new commit with your changes has been recorded in your local repository on your computer, but these changes are not automatically stored on github.com. You need to _push_ your local commits back to GitHub.
+A new commit with your changes will be recorded in your local repository on your computer, but these changes are not automatically stored on github.com. You need to _push_ your local commits back to GitHub.
 
-In this history list, an arrow will appear next to commits that have not been pushed to the remote github.com repository.
+In the history list, an arrow will appear next to commits that have not been pushed to the remote github.com repository.
 
 ![](./img/github-desktop-not-pushed.png)
 
-In GitHub Deskotp, click the **Push origin** button at the top of the window to push your newly created commits to your remote repository on github.com.
+In GitHub Desktop, click the **Push origin** button at the top of the window to push your newly created commits to your remote repository on github.com.
 
 ![](./img/github-desktop-push.png)
 
@@ -100,3 +100,7 @@ In GitHub Deskotp, click the **Push origin** button at the top of the window to 
 You can confirm which commits are stored in your github.com repository by opening the repository in your web browser and clicking the **Commits** button.
 
 ![](./img/github-commits-button.png)
+
+## Done
+
+You should now be ready to develop C++ applications on your computer.
