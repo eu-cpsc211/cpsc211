@@ -38,7 +38,7 @@ Once you open the folder in Visual Studio, open the **Solution Explorer** panel.
 
 ## Build and run
 
-In the **Solution Explorer**, double click the `main.cpp` file to open it.
+In the **Solution Explorer**, double-click the `main.cpp` file to open it.
 
 Click the green play button in the toolbar to build and run the program.
 

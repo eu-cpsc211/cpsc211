@@ -6,7 +6,7 @@ These instructions demonstrate how to set up and use Visual Studio Code on Mac. 
 
 ## Install Clang
 
-Check if Clang is installed on your Mac. To do this, open a terminal window and enter:
+Check if Clang is installed on your Mac. To do this, open the Terminal app and execute the following command:
 
 ```
 clang --version
@@ -16,7 +16,7 @@ If Clang is installed, you will see the version number that is installed.
 
 ![](./img/mac-vscode-clang.png)
 
-If Clang is not installed, you will see a message indicating the command was not found. In that case, enter the following command in the terminal window:
+If Clang is not installed, you will see a message indicating the command was not found. In that case, enter the following command in the Terminal app:
 
 ```
 xcode-select --install
