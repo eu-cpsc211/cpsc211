@@ -46,7 +46,7 @@ int main()
 
 #### Exercise: extend the simple rectangle program
 
-**Step 1:** add another set of variables to track the dimensions of another rectangle. Add another set of `cout` statements to display the second rectangles area and perimeter.
+**Step 1:** add another set of variables to track the dimensions of another rectangle. Add another set of `cout` statements to display the second rectangle's area and perimeter.
 
 **Step 2:** refactor the area and perimeter computations into functions.
 
@@ -65,6 +65,14 @@ A class is like a blueprint. By itself, it doesn't do anything. If you have a bl
 
 In C++ we take a _class_ and build an _object_. An object can be called an _instance_ of a class. Each instance has its own copy of member variables.
 
+You've already used objects and classes if you've used `string` or `vector` data types. These are both C++ classes. When you create a variable using one of these data types, you create an object of that class.
+
+```cpp
+string name; // Creates an object of type `string`
+name = "Hello";
+cout << name.size() << endl; // The size() member function is part of the string class
+```
+
 ### Class definitions
 
 Example `Rectangle` class:
@@ -80,6 +88,8 @@ private:
     double height;
 };
 ```
+
+_Note: unlike function definitions, class definitions have a semicolon after the closing bracket._
 
 ### Objects
 
