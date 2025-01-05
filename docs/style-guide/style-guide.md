@@ -131,8 +131,8 @@ int laserPercent = 0;
 while (laserPercent < 100)
     laserPercent = CheckLaserChargePercent(x, y);
 
-// Fire laser only if target aquired to avoid malfunction
-if (targetAquired)
+// Fire laser only if target acquired to avoid malfunction
+if (targetAcquired)
     fireLaser(x, y);
 ```
 
@@ -144,7 +144,7 @@ int y = originY + height;
 int laserPercent = 0;
 while (laserPercent < 100)
     laserPercent = CheckLaserChargePercent(x, y);
-if (targetAquired)
+if (targetAcquired)
     fireLaser(x, y);
 ```
 
@@ -242,7 +242,7 @@ int b;
 int theTimeItTakesInMillisecondsToRunALap;
 ```
 
-A common exception for this guideline is for variables used as an index or counter variable, often named `i` and often in a `for` loop. This is generally considered acceptable and [idomatic](https://en.wikipedia.org/wiki/Programming_idiom).
+A common exception for this guideline is for variables used as an index or counter variable, often named `i` and often in a `for` loop. This is generally considered acceptable and [idiomatic](https://en.wikipedia.org/wiki/Programming_idiom).
 
 ```cpp
 for (int i = 0; i < items.size(); ++i) {
