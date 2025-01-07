@@ -4,7 +4,7 @@ Textbook sections:
 
 - 1.7 Classes and vectors/classes
 - 1.8 Constructor overloading
-- 1.9 Constructor initializer lists
+- 1.9 Constructor initializer lists (optional, but recommended)
 
 ## Parameterized constructors
 
