@@ -1,9 +1,5 @@
-cmake_minimum_required (VERSION 3.8)
-
-project ("example")
-
-add_executable (example
+add_executable (1-hello-world
 	"main.cpp"
 )
 
-set_property(TARGET example PROPERTY CXX_STANDARD 17)
+set_property(TARGET 1-hello-world PROPERTY CXX_STANDARD 17)
