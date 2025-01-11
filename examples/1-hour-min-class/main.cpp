@@ -1,7 +1,3 @@
-/*
-This class is used as an example in class and is expanded with additional member functions.
-*/
-
 #include <iostream>
 
 using namespace std;
