@@ -257,7 +257,7 @@ int main()
     Circle c;
     c.SetRadius(10);
     cout << "Area: " << c.GetArea() << endl;
-    cout << "Circumference: " << p.GetCircumference() << endl;
+    cout << "Circumference: " << c.GetCircumference() << endl;
 }
 ```
 
@@ -268,4 +268,17 @@ Area: 314.159
 Circumference: 62.8319
 ```
 
-Tip: include `<cmath>` to get access to `M_PI`, a constant that contains the value of Pi.
+Tip: to get the value of Pi, use:
+
+```cpp
+#define _USE_MATH_DEFINES
+#include <cmath>
+
+// You can access Pi via the constant M_PI
+```
+
+Or you can hard-code the value:
+
+```cpp
+double PI = 3.14159265358979323846;
+```
