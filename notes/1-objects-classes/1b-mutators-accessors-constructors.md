@@ -72,9 +72,9 @@ Review:
 
 ## Mutators and accessors
 
-- Mutator: a member function that can modify class member variables. Also known as a _setter_.
+- Mutator: a member function that can modify class member variables.
   - Example: `SetRadius()`
-- Accessor: a member function that reads class member variables, but does not modify them. Also known as a _getter_.
+- Accessor: a member function that reads class member variables, but does not modify them.
   - Example: `GetArea()`
 
 ### Constant member functions
