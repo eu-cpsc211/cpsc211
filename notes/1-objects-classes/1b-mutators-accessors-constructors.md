@@ -126,7 +126,7 @@ Why is marking member functions as `const` useful? Why couldn't the compiler det
 
 ## Constructors
 
-Constructors are special member functions that are called when an object is created. A general constructor has no parameters.
+Constructors are special member functions that are called when an object is created. A default constructor has no parameters.
 
 Example declaration:
 
