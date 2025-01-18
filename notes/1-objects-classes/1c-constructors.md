@@ -82,7 +82,7 @@ You can add whatever private members you need to implement the class.
 
 Here is an example of using the `PlayerStats` class after it has been implemented:
 
-```
+```cpp
 PlayerStats jordan(23, "Michael Jordan");
 jordan.AddMade2ptFieldGoal();
 jordan.AddMade3ptFieldGoal();
@@ -111,7 +111,7 @@ Player 23 Michael Jordan has scored 8 points.
 
 Use the following code to answer the questions.
 
-```
+```cpp
 class Thing
 {
 public:

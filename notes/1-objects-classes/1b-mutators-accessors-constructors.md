@@ -130,7 +130,7 @@ Constructors are special member functions that are called when an object is crea
 
 Example declaration:
 
-```
+```cpp
 class Rectangle
 {
 public:
@@ -141,7 +141,7 @@ public:
 
 Example definition:
 
-```
+```cpp
 Rectangle::Rectangle()
 {
     width = 0;
@@ -168,7 +168,7 @@ Rectangle rec1;
 
 Consider the following class:
 
-```
+```cpp
 class Foo
 {
 public:
@@ -190,7 +190,7 @@ public:
 
 A `const` parameter is slightly different than a `const` member function.
 
-```
+```cpp
 void DoSomething(const int& x);
 ```
 

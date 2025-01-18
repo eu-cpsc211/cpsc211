@@ -91,7 +91,7 @@ We will use [GoogleTest](https://google.github.io/googletest/) as our unit testi
 
 Simple test case:
 
-```
+```cpp
 TEST(Sample, OneEqualsOne)
 {
     ASSERT_EQ(1, 1);
@@ -110,7 +110,7 @@ Other assert macros such as:
 
 Example using variables:
 
-```
+```cpp
 TEST(Sample, VariablesAreEqual)
 {
     int a = 1;
@@ -143,7 +143,7 @@ General guidelines:
 
 Test to verify the `GetHeight()` member function returns the correct height:
 
-```
+```cpp
 TEST(GetHeight, ReturnsCorrectHeight)
 {
     Rectangle r(0, 0, 10, 10);
@@ -153,7 +153,7 @@ TEST(GetHeight, ReturnsCorrectHeight)
 
 Improved version:
 
-```
+```cpp
 TEST(GetHeight, ReturnsCorrectHeight)
 {
     Rectangle r(0, 0, 5, 10);
@@ -165,7 +165,7 @@ TEST(GetHeight, ReturnsCorrectHeight)
 
 Add another test case. What if we create a rectangle using the default constructor?
 
-```
+```cpp
 TEST(GetHeight, DefaultConstructor)
 {
     Rectangle r;
@@ -190,7 +190,7 @@ We can't feasibly test every possible input into our class. Instead, select a se
 
 Example test for when width and height are different:
 
-```
+```cpp
 TEST(GetArea, WidthAndHeightDifferent)
 {
     Rectangle r(0, 0, 10, 5);
@@ -210,7 +210,7 @@ Implement test cases for `GetPerimeter()`.
 
 There is a general pattern to a unit test case:
 
-```
+```cpp
 TEST(GroupName, CaseName)
 {
     // Arrange: setup variables and things needed for the test case

@@ -10,7 +10,7 @@ Textbook sections:
 
 Consider this class:
 
-```
+```cpp
 class Color {
   public:
     Color(int r, int g, int b);
