@@ -96,7 +96,7 @@ cout << "dayPtr (value): " << dayPtr << endl;
 cout << "dayPtr (dereference): " << _________ << endl;
 ```
 
-### Assignment values through a pointer
+### Assigning values through a pointer
 
 You can assign a value to a dereferenced pointer:
 
