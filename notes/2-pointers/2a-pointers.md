@@ -183,7 +183,7 @@ cout << *b << endl;
 cout << *c << endl;
 ```
 
-## Additional exercises
+## Study guide
 
 - How do you declare a pointer variable?
 
@@ -191,7 +191,7 @@ cout << *c << endl;
 
 - How do you get the address of a variable (i.e., what is the "address-of" operator)?
 
-- What are some valid ways of assigning a pointer variable to point to nothing/null?
+- What are three valid ways of assigning a pointer variable to point to nothing/null?
 
 - What is displayed by the following code?
 

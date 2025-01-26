@@ -299,7 +299,7 @@ int main()
 }
 ```
 
-### Additional exercises
+### Study guide
 
 - Given a pointer `int* p`, how many bytes will `p++` increment the pointer by?
 - Given a pointer `float* p`, how many bytes will `p--` decrement the pointer by?
@@ -307,51 +307,51 @@ int main()
 - What is the difference between a static array and a dynamic array?
 - Given the following dynamic memory allocation, what is the proper way to deallocate that memory?
 
-```cpp
-int* a = new int;
-```
+  ```cpp
+  int* a = new int;
+  ```
 
 - Given the following dynamic memory allocation, what is the proper way to deallocate that memory?
 
-```cpp
-Rectangle* r = new Rectangle;
-```
+  ```cpp
+  Rectangle* r = new Rectangle;
+  ```
 
 - Given the following dynamic memory allocation, what is the proper way to deallocate that memory?
 
-```cpp
-int* numbers = new int[100];
-```
+  ```cpp
+  int* numbers = new int[100];
+  ```
 
 - What is displayed by the following program?
 
-```cpp
-#include <iostream>
+  ```cpp
+  #include <iostream>
 
-using namespace std;
+  using namespace std;
 
-class Thing {
+  class Thing {
   public:
-    int number;
-};
+      int number;
+  };
 
-int main()
-{
-    Thing *a, *b, *c;
+  int main()
+  {
+      Thing *a, *b, *c;
 
-    c = new Thing;
-    c->number = 75;
+      c = new Thing;
+      c->number = 75;
 
-    b = new Thing;
-    b->number = c->number % 8;
+      b = new Thing;
+      b->number = c->number % 8;
 
-    a = new Thing;
-    a->number = b->number + c->number;
+      a = new Thing;
+      a->number = b->number + c->number;
 
-    cout << a->number << ' ' << b->number << ' ' << c->number << endl;
+      cout << a->number << ' ' << b->number << ' ' << c->number << endl;
 
-    return 0;
-}
-```
+      return 0;
+  }
+  ```
 
 - How do you access members of an object given a pointer to that object? (there are two ways; know both of them)
