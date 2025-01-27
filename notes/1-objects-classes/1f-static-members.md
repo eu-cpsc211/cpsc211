@@ -33,6 +33,12 @@ class Color {
 
 _The full code for this example is found in the examples directory of this repository. Look over that code for full context and usage examples._
 
+![](./assets/1f-static-members.svg)
+
+- Regular members are accessed from a specific object instance.
+- Static members do not use a specific object. There is only one instance.
+- Static members can be accessed by regular member functions, but not vice-versa.
+
 ## Questions
 
 - Which data members are contained within every _object_ of the `Color` class? In other words, each instance of the `Color` class has its own copy of which member variables?
