@@ -12,16 +12,16 @@ class Color {
     void Print() const;
 
     static Color Red();         // Static member function (public)
-    static int m_publicCounter; // Static member variable (public)
+    static int s_publicCounter; // Static member variable (public)
     const int PUBLIC_CONST = 1; // Const member variable (public)
 
   private:
-    int red;
-    int green;
-    int blue;
+    int m_red;
+    int m_green;
+    int m_blue;
 
     static Color SecretColor();  // Static member function (private)
-    static int m_privateCounter; // Static member variable (private)
+    static int s_privateCounter; // Static member variable (private)
     const int PRIVATE_CONST = 2; // Const member variable (private)
 };
 
@@ -30,25 +30,25 @@ Class implementation
 -------------------------------------------------------- */
 
 // Static member variables have to be initialized outside the class definition
-int Color::m_publicCounter = 0;
-int Color::m_privateCounter = 0;
+int Color::s_publicCounter = 0;
+int Color::s_privateCounter = 0;
 
 Color::Color(int r, int g, int b)
 {
-    red = r;
-    green = g;
-    blue = b;
+    m_red = r;
+    m_green = g;
+    m_blue = b;
 }
 
 void Color::Print() const
 {
-    cout << "R: " << red << " G: " << green << " B: " << blue << endl;
+    cout << "R: " << m_red << " G: " << m_green << " B: " << m_blue << endl;
 }
 
 Color Color::Red()
 {
-    m_publicCounter++;
-    m_privateCounter++;
+    s_publicCounter++;
+    s_privateCounter++;
     return Color(255, 0, 0);
 }
 
@@ -78,20 +78,20 @@ int main()
 
     // Static member variables
     // ----------------------
-    Color::m_publicCounter = 10; // Public static member variables can be accessed without an object
-    r.m_publicCounter = 20;      // They can be accessed with an object, but there's only a single instance of the variable
-    cout << Color::m_publicCounter << endl;
-    cout << r.m_publicCounter << endl;
+    Color::s_publicCounter = 10; // Public static member variables can be accessed without an object
+    r.s_publicCounter = 20;      // They can be accessed with an object, but there's only a single instance of the variable
+    cout << Color::s_publicCounter << endl;
+    cout << r.s_publicCounter << endl;
 
     // Private static member variables
     // ----------------------
-    // Color::m_privateCounter = 10; // Invalid - can only be accessed within the class
+    // Color::s_privateCounter = 10; // Invalid - can only be accessed within the class
 
     // Const member variables
     // ----------------------
     cout << r.PUBLIC_CONST << endl; // Valid
     // cout << Color::PUBLIC_CONST << endl; // Invalid - must be accessed with an object
-    // cout << r.PRIVATE_CONST << endl; // Invalid - private, so only accssible within the class
+    // cout << r.PRIVATE_CONST << endl; // Invalid - private, so only accessible within the class
 
     return 0;
 }

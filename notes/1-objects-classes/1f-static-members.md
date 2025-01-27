@@ -17,16 +17,16 @@ class Color {
     void Print() const;
 
     static Color Red();         // Static member function (public)
-    static int m_publicCounter; // Static member variable (public)
+    static int s_publicCounter; // Static member variable (public)
     const int PUBLIC_CONST = 1; // Const member variable (public)
 
   private:
-    int red;
-    int green;
-    int blue;
+    int m_red;
+    int m_green;
+    int m_blue;
 
     static Color SecretColor();  // Static member function (private)
-    static int m_privateCounter; // Static member variable (private)
+    static int s_privateCounter; // Static member variable (private)
     const int PRIVATE_CONST = 2; // Const member variable (private)
 };
 ```
