@@ -138,13 +138,27 @@ There are different segments of main memory used for your program:
 - Stack: a block of memory assigned to the program by the operating system for use while it runs.
 - Heap: memory managed by the operating system from which a program can request additional memory from.
 
-Local variables are stored on the stack. The compiler manages the allocation of this memory automatically. Example diagram of local variables on the stack:
+Local variables are stored on the stack. The compiler manages the allocation of this memory automatically.
+
+Example: program enters function:
 
 ![](./assets/2-stack-2.svg)
 
-You can allocate additional memory from the heap by using the C++ `new` keyword. This returns a pointer to the newly allocated memory. When you are done with the memory, you must free it with the `delete` keyword.
+Example: variable in nested scope encountered:
 
 ![](./assets/2-stack-3.svg)
+
+When a variable goes out of scope, that memory is free/reclaimed:
+
+![](./assets/2-stack-4.svg)
+
+You can allocate additional memory from the heap by using the C++ `new` keyword. This returns a pointer to the newly allocated memory. When you are done with the memory, you must free it with the `delete` keyword.
+
+![](./assets/2-stack-5-heap.svg)
+
+If you forget to free the memory, the OS does not allow it to be used elsewhere until the program is terminated.
+
+![](./assets/2-stack-6-heap.svg)
 
 Example of allocating and freeing memory dynamically:
 
