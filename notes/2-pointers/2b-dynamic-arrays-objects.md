@@ -33,7 +33,7 @@ const int NUM_SCORES = 5;
 
 int main()
 {
-    int score[5];
+    int score[NUM_SCORES];
 
     for (int i = 0; i < NUM_SCORES; i++) {
         cout << "Enter a score for game " << i + 1 << ": ";
