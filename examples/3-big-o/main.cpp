@@ -46,7 +46,7 @@ void Sort(int* values, int numValues)
     for (int i = 0; i < numValues - 1; i++) {
 
         // Inner loop: loop through each pair of numbers and swap if necessary
-        for (int j = 0; j < numValues - 1 - i; j++) {
+        for (int j = 0; j < numValues - 1; j++) {
             int left = values[j];
             int right = values[j + 1];
 
