@@ -194,7 +194,7 @@ for (int i = 0;                                 // 1         1
          i++)                                   // 1         n - 1
 {
     for (int j = 0;                             // 1         n - 1
-         j < n - 1;                             // 2         n * n
+         j < n - 1;                             // 2         n * (n - 1)
          j++)                                   // 1         (n - 1) * (n - 1)
     {
         int left = values[j];                   // 1         ""
