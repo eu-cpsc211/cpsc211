@@ -193,11 +193,11 @@ for (int i = 0;                                 // 1         1
          i < n - 1;                             // 2         n
          i++)                                   // 1         n - 1
 {
-    for (int j = 0;                             // 1         n
-         j < n - 1 - i;                         // 3         (n - i) * n
-         j++)                                   // 1         n
+    for (int j = 0;                             // 1         n - 1
+         j < n - 1 - i;                         // 3         (n - i) * (n - 1)
+         j++)                                   // 1         n - 1
     {
-        int left = values[j];                   // 1         (n - 1 - i) * n
+        int left = values[j];                   // 1         (n - 1 - i) * (n - 1)
         int right = values[j + 1];              // 2         ""
 
         if (left > right) {                     // 1         ""
