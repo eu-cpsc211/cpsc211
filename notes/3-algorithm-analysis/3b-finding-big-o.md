@@ -30,7 +30,7 @@ Evaluate the complexity of the function being called.
 ```cpp
 int val = 543;                  // O(1)
 int x = 12;                     // O(1)
-num = DoSomethingLinear(n);     // O(n) if O(DoSomethingLinear(n)) is O(n)
+num = DoSomethingLinear(n);     // O(n) if Big O for DoSomethingLinear(n) is O(n)
 num = num * x + val;            // O(1)
 
 // Big O for all statements is O(1 + 1 + n + 1) = O(n)
