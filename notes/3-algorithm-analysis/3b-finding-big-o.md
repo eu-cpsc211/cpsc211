@@ -262,7 +262,7 @@ Let's find $f(n)$. Remember, this is a formula that tells us how many steps are 
 > $f(n) = x$
 
 - Each step in one iteration of the loop is $O(1)$.
-- The loop iterates $x - 1$ times.
+- The loop iterates $x + 1$ times.
 - So we can say the loop essentially requires $x$ steps (we can drop the constants).
 
 We need to rewrite this in terms of $n$ instead of $x$. What is $x$?
