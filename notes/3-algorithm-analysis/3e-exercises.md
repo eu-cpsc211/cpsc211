@@ -62,6 +62,7 @@ while (x < n) {
     }
 
     cout << count << endl;
+    x++;
 }
 ```
 
