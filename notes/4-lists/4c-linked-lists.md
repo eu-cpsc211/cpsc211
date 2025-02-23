@@ -183,11 +183,11 @@ int main()
 
 ![](./assets/4-linked-list-study-delete.svg)
 
-- Consider the following linked list. Write two lines of C++ code that would insert `newNode` into the linked list after `head`.
+- Consider the following linked list. Write two lines of C++ code that would insert `newNode` into the linked list after the `head` node (i.e., the new node will be the second item in the list).
 
 ![](./assets/4-linked-list-study-insert.svg)
 
-- Consider the following function `Append()`. Implement the function so the node pointed to by `newNode` is appended to the end of the list pointed to by `head` (in this example, `head` points to the first node in the list).
+- Consider the following function `Append()`. Implement the function so the node pointed to by `newNode` is appended to the end of the list. The `head` pointer points to the first node in the list.
 
 ```cpp
 void Append(Node* head, Node* newNode)
