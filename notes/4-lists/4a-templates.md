@@ -111,3 +111,17 @@ Pair<int> p(12, 9);
 Pair<char> p('a', 'b');
 Pair<string> p("abc", "def");
 ```
+
+## Study guide
+
+Given a class template definition, know how to create a variable using that class. For example:
+
+```cpp
+Pair<int> p(12, 9);
+```
+
+Also know how to dynamically allocate an object using a class template. For example:
+
+```cpp
+Pair<int> p* = new Pair<int>(12, 9);
+```
