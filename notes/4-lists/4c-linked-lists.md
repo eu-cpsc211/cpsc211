@@ -179,7 +179,7 @@ int main()
 
 ### Operations examples
 
-- Consider the following linked list. Write two lines of C++ code that would remove `b` from the list.
+- Consider the following linked list. Write two lines of C++ code that would remove `b` from the list and free its memory.
 
 ![](./assets/4-linked-list-study-delete.svg)
 
