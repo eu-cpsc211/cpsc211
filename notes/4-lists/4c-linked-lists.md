@@ -6,6 +6,8 @@ Textbook sections:
 - 4.4 Singly-linked lists: Insert
 - 4.5 Singly-linked lists: Remove
 
+We'll use the following repository during lecture: https://github.com/eu-cpsc211/exercise-linked-list
+
 ## Linked list
 
 A linked list connects multiple elements together via pointers. Each element is an object. You may here elements in a linked list referred to as _nodes_.

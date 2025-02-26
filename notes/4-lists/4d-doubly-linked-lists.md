@@ -6,6 +6,8 @@ Textbook sections:
 - 4.7 Doubly-linked lists: Insert
 - 4.8 Doubly-linked lists: Remove
 
+We'll use the following repository during lecture: https://github.com/eu-cpsc211/exercise-linked-list
+
 ## Doubly Linked List
 
 A doubly linked list is the same as a singly linked list except for the addition of a pointer that points to the previous node in the list.
