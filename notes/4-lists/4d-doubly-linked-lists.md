@@ -62,10 +62,6 @@ Things to consider:
 
 Sometimes it is useful to keep a `tail` pointer around (alongside the `head` pointer) that always points to the last node in the list.
 
-## Exercise
-
-TBD
-
 ## Study Guide
 
 ### Code example 1
