@@ -63,7 +63,7 @@ Below are some examples of list data types in C++ and a few select languages. Th
 
 ### C++
 
-There is a built-in `vector` class that acts like a list ADT. Naming conventions are interesting, but things work as expected. If you need a list in C++, this is the go-to data type.
+There is a built-in `vector` class that acts like a list ADT. If you need a list in C++, this is the go-to data type.
 
 ```cpp
 #include <iostream>
@@ -105,6 +105,12 @@ int main()
     return 0;
 }
 ```
+
+There are a few other containers in C++ that are similar, but are implemented differently and therefore exhibit different performance characteristics in different scenarios.
+
+- [list](https://en.cppreference.com/w/cpp/container/list)
+- [forward_list](https://en.cppreference.com/w/cpp/container/forward_list)
+- [deque](https://en.cppreference.com/w/cpp/container/deque)
 
 ### C#
 
