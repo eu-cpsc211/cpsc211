@@ -140,6 +140,8 @@ The C++ standard library has a built-in stack data structure. Technically it act
 
 See: https://en.cppreference.com/w/cpp/container/stack
 
+It is worth noting that the `pop` function of the `stack` type in C++ does not return a value. Some pop functions in other implementations return the value that was just popped. With the built-in `stack` type (if you want to use the value you pop) you must first read the topmost value with the `top` function, then remove it with `pop`.
+
 ```cpp
 #include <cmath>
 #include <iostream>
