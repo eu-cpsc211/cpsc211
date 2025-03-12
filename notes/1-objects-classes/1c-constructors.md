@@ -20,7 +20,7 @@ public:
 };
 ```
 
-- General constructor: no parameters
+- Default constructor: no parameters
 - Parameterized constructor: has one or more parameters
 
 Example of creating objects using each constructor:
