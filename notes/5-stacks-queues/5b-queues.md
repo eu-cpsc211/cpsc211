@@ -99,7 +99,18 @@ Exercise: https://onecompiler.com/cpp/43brc4urf
 
 ## Queues using linked lists
 
-Coming soon.
+One possible implementation:
+
+- `head` pointer points to front of queue.
+- `tail` pointer points to back of queue.
+- Enqueue appends item to back of linked list.
+- Dequeue removes item from front of linked list.
+
+![](./assets/5-queue-linked-list.svg)
+
+Exercise: https://onecompiler.com/cpp/43bss3meh
+
+- Implement the functions with `TODO` comments.
 
 ## Study guide
 
