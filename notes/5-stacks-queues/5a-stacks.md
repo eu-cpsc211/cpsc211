@@ -186,4 +186,64 @@ int main()
 
 ## Study guide
 
-Coming soon.
+### General questions
+
+- What does "LIFO" mean and what is an example of a LIFO data structure?
+- How would you check if a bounded stack is full when implemented with an array?
+- Do worst-case runtime analyses of stack operations (i.e., find the Big O):
+  - `push()` when using an array implementation (bounded)
+  - `push()` when using a linked list implementation
+  - `pop()` when using an array implementation (bounded)
+  - `pop()` when using a linked list implementation
+
+### Stack code example
+
+Assume the `Stack` class is a custom stack data type that supports both `push()` and `pop()` operations.
+
+```cpp
+Stack<char> s;
+s.push('a');
+
+char c = s.pop();
+s.push(c);
+s.push(c);
+s.push('d');
+
+c = s.pop();
+s.push(c);
+s.push(c);
+s.push('z');
+```
+
+- What does the stack contain after the code is executed?
+- What is the value of the variable `c` after the code is executed?
+
+### Stack code example
+
+Assume the `Stack` class is a custom stack data type that supports `push()`, `pop()`, and `isEmpty()` operations.
+
+```cpp
+Stack<int> s;
+int x = 10;
+
+for (int i = 0; i < 9; i++) {
+  if (i % 3 != 0) {
+    s.push(i);
+  }
+  else if (!s.isEmpty()) {
+    s.pop();
+  }
+
+  x = i;
+}
+```
+
+- What does the stack contain after the code is executed?
+- What is the value of the variable `x` after the code is executed?
+
+### Stack push/pop
+
+Suppose you have a stack implemented with a linked list. You have a `top` pointer that points to the top of the stack.
+
+- Write C++ code that would push a new item onto the stack.
+- Write C++ code that would pop the top item off of the stack.

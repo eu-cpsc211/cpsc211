@@ -112,6 +112,109 @@ Exercise: https://onecompiler.com/cpp/43bss3meh
 
 - Implement the functions with `TODO` comments.
 
+## Message queues
+
+A real world application of queues in software development is the idea of a message or event queue.
+
+![](./assets/5-message-queue.svg)
+
+- Producer(s) generates messages or events and submits them to a queue.
+- Consumer(s) monitor the queue and process messages as they come in.
+
+There are many variations on this idea.
+
+Example: a job system in a video game engine.
+
+![](./assets/5-job-system.svg)
+
+Interesting links:
+- https://github.com/Game-Architecture/homework-1-queuing-eameres
+- [Parallelizing the Naughty Dog Engine](https://gdcvault.com/play/1022186/Parallelizing-the-Naughty-Dog-Engine)
+- https://github.com/hlavacs/ViennaGameJobSystem
+- https://blog.molecular-matters.com/2015/08/24/job-system-2-0-lock-free-work-stealing-part-1-basics/
+- [Multithreading the Entire Destiny Engine](https://www.youtube.com/watch?v=v2Q_zHG3vqg)
+
+Example: a web application message queue
+
+![](./assets/5-web-message-queue.svg)
+
+Examples of messaging systems:
+- [RabbitMQ](https://www.rabbitmq.com/)
+- [Azure Service Bus](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-messaging-overview)
+- [Google Pub/Sub](https://cloud.google.com/pubsub/docs/overview)
+
+## Deques
+
+A deque (pronounced "deck") is a double-ended queue.
+
+- You can push/pop from the front of the queue.
+- You can push/pop from the back of the queue.
+
+![](./assets/5-deque.svg)
+
+Example: https://onecompiler.com/cpp/43bw6thp7
+
 ## Study guide
 
-Coming soon.
+### General questions
+
+- What does "FIFO" mean and what is an example of a FIFO data structure?
+- What operations does a deque data structure support?
+- If you implement a queue using a circular array, you may have multiple variables like `frontIndex`, `length`, and `allocationSize` to help keep track of the queue state. How would you determine the index to enqueue the next item at using these variables?
+- Do worst-case runtime analyses of queue operations (i.e., find the Big O):
+  - `enqueue()` when using an array implementation (bounded)
+  - `dequeue()` when using a linked list implementation
+  - `enqueue()` when using an array implementation  (bounded)
+  - `dequeue()` when using a linked list implementation
+
+### Queue code example
+
+Assume the `Queue` class is a custom queue data type that supports both `enqueue()` and `dequeue()` operations.
+
+```cpp
+Queue<char> q;
+q.enqueue('a');
+
+char c = s.dequeue();
+q.enqueue(c);
+q.enqueue(c);
+q.enqueue('d');
+
+c = s.dequeue();
+q.enqueue(c);
+q.enqueue(c);
+q.enqueue('z');
+```
+
+- What does the queue contain after the code is executed?
+- What is the value of the variable `c` after the code is executed?
+
+### Queue code example
+
+Assume the `Queue` class is a custom queue data type that supports `enqueue()`, `dequeue()`, and `isEmpty()` operations.
+
+```cpp
+Queue<int> q;
+int x = 10;
+
+for (int i = 0; i < 9; i++) {
+  if (i % 3 != 0) {
+    q.push(i);
+  }
+  else if (!q.isEmpty()) {
+    q.pop();
+  }
+
+  x = i;
+}
+```
+
+- What does the queue contain after the code is executed?
+- What is the value of the variable `x` after the code is executed?
+
+### Queue enqueue/dequeue
+
+Suppose you have a queue implemented with a linked list. You have `head` and `tail` pointers.
+
+- Write C++ code that would enqueue a new item to the back of the queue.
+- Write C++ code that would dequeue an item from the front of the queue.
