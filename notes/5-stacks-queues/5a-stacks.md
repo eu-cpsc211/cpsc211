@@ -30,6 +30,7 @@ A "pop" operation removes the topmost brick from the tower.
 A stack has the characteristics of a LIFO data structure. LIFO stands for "Last In, First Out". This means the last item you put into the stack will be the first item you remove from the stack.
 
 In other words, the top item in the stack is **both**:
+
 - the most recent item you pushed onto the stack.
 - the item that will be removed if you performed a pop operation right now.
 
@@ -72,7 +73,7 @@ void PrintStack(int* stack, int size)
   cout << "[top]" << endl;
 }
 
-int main() 
+int main()
 {
   // Bounded stack - array size is fixed
   int stack[5];
@@ -82,9 +83,9 @@ int main()
   stack[size++] = 100;
   stack[size++] = 200;
   stack[size++] = 300;
-  
+
   PrintStack(stack, size);
-  
+
   // Pop
   int val = stack[--size];
   cout << val << endl;
@@ -95,9 +96,9 @@ int main()
   stack[size++] = 400;
   stack[size++] = 500;
   stack[size++] = 600;
-  
+
   PrintStack(stack, size);
-  
+
   // Stack is full now, so no more pushes are allowed
   //stack[size++] = 700;
 
@@ -184,6 +185,42 @@ int main()
 }
 ```
 
+## Postfix notation
+
+Mathematical expressions are comprised of:
+
+- operands (numbers)
+- operators (e.g., `+`, `-`, `*`, `/`)
+
+They can be written in three different notations:
+
+- Infix: `13 + 2` (this is what we normally use)
+- Prefix: `+ 13 2` (operator before operands)
+- Postfix: `13 2 +` (operator after operands)
+
+A postfix expression can be evaluated using a stack.
+
+- Go through the expression from left to right.
+- If you encounter an operand (number), push it to the stack.
+- If you encounter an operator, pop two operands off the stack and perform the specified operation (add, subtract, etc.). Push the result of the operation back onto the stack.
+- When finished going through the expression, you should have a single value on the stack.
+
+For example, consider the postfix expression `13 2 + 4 1 - *`.
+
+- `13` - push `13` to stack
+- `2` - push `2` to stack
+- `+` - pop `2` and `13`, add `2` and `13`, push result `15` to stack
+- `4` - push `4` to stack
+- `1` - push `1` to stack
+- `-` - pop `1` and `4`, subtract `4` and `1`, push result `3` to stack
+- `*` - pop `3` and `15`, multiply `15` and `3`, push result to stack
+- Stack contains final result of `45`.
+
+See also:
+
+- [Reverse Polish Notation and The Stack - Computerphile](https://www.youtube.com/watch?v=7ha78yWRDlE)
+- [Reverse Polish notation](https://en.wikipedia.org/wiki/Reverse_Polish_notation)
+
 ## Study guide
 
 ### General questions
@@ -247,3 +284,13 @@ Suppose you have a stack implemented with a linked list. You have a `top` pointe
 
 - Write C++ code that would push a new item onto the stack.
 - Write C++ code that would pop the top item off of the stack.
+
+### Postfix notation
+
+Evaluate the following postfix expressions:
+
+- `14 2 +`
+- `8 4 /`
+- `20 2 + 4 + 5 *`
+- `5 9 * 100 4 - 10 + *`
+- `14`
