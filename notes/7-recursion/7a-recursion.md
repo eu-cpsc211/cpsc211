@@ -116,7 +116,7 @@ void Example(int x)
 }
 ```
 
-- What is displayed by the call `Example(12)`?
+- What is displayed by the call `Example(5)`?
 
 ![](./assets/example5-vis.svg)
 
