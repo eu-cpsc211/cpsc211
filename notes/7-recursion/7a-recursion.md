@@ -236,12 +236,24 @@ What is the proper Big O category for the following function when using the vari
 ```cpp
 int Example(int n)
 {
-    if (n > 20)
+    if (n > 0)
         return n;
-    else if (n % 2 == 0)
-        return Example(n + 1);
     else
-        return Example(n * 2);
+        return Example(n - 1);
+}
+```
+
+What is the proper Big O category for the following function when using the variable `n` as the problem size?
+
+```cpp
+int Example(int n)
+{
+    if (n <= 0)
+        return n;
+    else if (n < 2)
+        return Example(n - 1);
+    else
+        return Example(n - 1) + Example(n - 2);
 }
 ```
 
