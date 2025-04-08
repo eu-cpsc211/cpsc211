@@ -132,7 +132,7 @@ int Example(int x)
 }
 ```
 
-- What is return by the call `Example(5)`?
+- What is return by the call `Example(12)`?
 
 ## Divide and conquer
 
