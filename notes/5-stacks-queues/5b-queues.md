@@ -81,7 +81,7 @@ Is it possible to enqueue an item at this point? Yes! The queue will wrap around
 
 This is called a circular array. When you reach the end, you wrap back around to the beginning.
 
-Enqueues and dequeues can continue indefinitely (of course with a bounded queue you can only enqueue as long as the queue is not full). 
+Enqueues and dequeues can continue indefinitely (of course with a bounded queue you can only enqueue as long as the queue is not full).
 
 ![](./assets/5-queue-array-7.svg)
 
@@ -128,6 +128,7 @@ Example: a job system in a video game engine.
 ![](./assets/5-job-system.svg)
 
 Interesting links:
+
 - https://github.com/Game-Architecture/homework-1-queuing-eameres
 - [Parallelizing the Naughty Dog Engine](https://gdcvault.com/play/1022186/Parallelizing-the-Naughty-Dog-Engine)
 - https://github.com/hlavacs/ViennaGameJobSystem
@@ -139,6 +140,7 @@ Example: a web application message queue
 ![](./assets/5-web-message-queue.svg)
 
 Examples of messaging systems:
+
 - [RabbitMQ](https://www.rabbitmq.com/)
 - [Azure Service Bus](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-messaging-overview)
 - [Google Pub/Sub](https://cloud.google.com/pubsub/docs/overview)
@@ -164,7 +166,7 @@ Example: https://onecompiler.com/cpp/43bw6thp7
 - Do worst-case runtime analyses of queue operations (i.e., find the Big O):
   - `enqueue()` when using an array implementation (bounded)
   - `dequeue()` when using a linked list implementation
-  - `enqueue()` when using an array implementation  (bounded)
+  - `enqueue()` when using an array implementation (bounded)
   - `dequeue()` when using a linked list implementation
 
 ### Queue code example
@@ -199,10 +201,10 @@ int x = 10;
 
 for (int i = 0; i < 9; i++) {
   if (i % 3 != 0) {
-    q.push(i);
+    q.enqueue(i);
   }
   else if (!q.isEmpty()) {
-    q.pop();
+    q.dequeue();
   }
 
   x = i;
