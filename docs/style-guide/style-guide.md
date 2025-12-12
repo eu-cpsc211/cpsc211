@@ -29,19 +29,21 @@ Below are the coding style guidelines for programming assignments done in this c
 
 ### Use clang-format
 
-The clang-format tool can help automatically format C++ code. Each assignment in this course will come with a `.clang-format` file. Both Visual Studio 2022 and Visual Studio Code will recognize this file and use it to apply code formatting.
+The clang-format tool can help automatically format C++ code. Each assignment in this course will come with a `.clang-format` file. Both Visual Studio Code and Visual Studio 2022 can use this file to apply code formatting.
 
 **NOTE:** This automatic formatting does not cover all points mentioned in the style guideline. It will not help you name variables or functions and it will not write comments for you. The automatic formatting is a convenience to get you most of the way there.
 
-To format a document in Visual Studio 2022, click **Edit** -> **Advanced** -> **Format Document**. You can also use a shortcut key combination. The default shortcut is to press `Ctrl+K` once, then press `Ctrl+D` once.
-
-![](./img/vs-format-document.png)
+For programming assignments, code formatting is automatically enabled on save when using Visual Studio Code. However, you can also invoke it manually.
 
 To format a document in Visual Studio Code, open the **Command Palette** by pressing `Ctrl+Shift+P` (Windows) or `Cmd+Shift+P` (Mac). You can also click on the search bar at the top of the window.
 
 Within the command palette, type `> Format Document` and press enter. This will format the current document.
 
 ![](./img/vscode-format-document.png)
+
+To format a document in Visual Studio 2022, click **Edit** -> **Advanced** -> **Format Document**. You can also use a shortcut key combination. The default shortcut is to press `Ctrl+K` once, then press `Ctrl+D` once.
+
+![](./img/vs-format-document.png)
 
 ### Whitespace
 
