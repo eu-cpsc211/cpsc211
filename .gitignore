@@ -5,6 +5,5 @@
 build/
 out/
 
-# VS Code settings.json
-# Normally would include this, but for C++ projects VS code likes to keep adding lots of files.associations
-.vscode/settings.json
+# Ignore clangd cache
+.cache/
