@@ -67,8 +67,8 @@ Make sure to put the app file (`Visual Studio Code.app`) into your **Application
 
 Open the **Extensions** panel in VS Code. Install the following two extensions:
 
-- C/C++ (search for `ms-vscode.cpptools`)
 - CMake Tools (search for `ms-vscode.cmake-tools`)
+- clangd (search for `llvm-vs-code-extensions.vscode-clangd`)
 
 <img src="./img/vscode-extensions.png" width=300>
 

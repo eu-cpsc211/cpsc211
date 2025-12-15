@@ -29,9 +29,20 @@ Download and install Visual Studio Code [here](https://code.visualstudio.com/doc
 Open the **Extensions** panel in VS Code. Install the following two extensions:
 
 - CMake Tools (search for `ms-vscode.cmake-tools`)
-- clangd (search for `llvm-vs-code-extensions.vscode-clangd`)
+- C/C++ (search for `ms-vscode.cpptools`)
 
-<img src="./img/vscode-extensions.png" width=300>
+When using MSVC as the compiler, the clangd extension does not work well. It is recommended to use `ms-vscode.cpptools` instead.
+
+You will have to make changes to `.vscode/settings.json` to support this:
+
+```json
+{
+  "C_Cpp.intelliSenseEngine": "default",
+  "[cpp]": {
+    "editor.defaultFormatter": "ms-vscode.cpptools"
+  }
+}
+```
 
 ## Install GitHub Desktop
 
