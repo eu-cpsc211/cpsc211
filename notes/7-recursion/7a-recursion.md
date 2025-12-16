@@ -7,7 +7,7 @@ Textbook:
 - 7.3 Recursive algorithm: Search
 - 7.4 Adding output statements for debugging
 - 7.5 Creating a recursive function
-- 7.6 Recursive math functions
+- 7.6 Recursive math functions (optional)
 - 7.7 Recursive exploration of all possibilities
 - 7.8 Stack overflow
 
