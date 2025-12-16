@@ -3,8 +3,8 @@
 Textbook sections:
 
 - 5.1 Stack abstract data type (ADT)
-- 5.2 Stacks using linked lists
-- 5.3 Array-based stacks
+- 5.2 Array-based stacks
+- 5.3 Stacks using linked lists
 
 ## Stack ADT
 
