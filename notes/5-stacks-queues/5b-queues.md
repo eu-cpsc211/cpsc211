@@ -3,8 +3,8 @@
 Textbook sections:
 
 - 5.4 Queue abstract data type (ADT)
-- 5.5 Queues using linked lists
-- 5.6 Array-based queues
+- 5.5 Array-based queues
+- 5.6 Queues using linked lists
 - 5.7 Deque abstract data type (ADT)
 
 ## Queue ADT
