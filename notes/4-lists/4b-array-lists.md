@@ -118,8 +118,8 @@ items[size++] = 15;
 items[size++] = 88;
 items[size++] = 0;
 
-size--;
-size--;
+size--;   // <-- LOOK
+size--;   // <-- LOOK
 ```
 
 - What is the physical size of the array?
