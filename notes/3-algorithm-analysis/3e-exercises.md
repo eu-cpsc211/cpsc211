@@ -186,6 +186,8 @@ void DoSomething(const char* message, int n, char charToFind) {
     while (i < n) {
         if (message[i] == charToFind)
             return i;
+
+        i++;
     }
 
     return -1;
