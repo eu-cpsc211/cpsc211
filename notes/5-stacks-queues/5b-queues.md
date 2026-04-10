@@ -177,12 +177,12 @@ Assume the `Queue` class is a custom queue data type that supports both `enqueue
 Queue<char> q;
 q.enqueue('a');
 
-char c = s.dequeue();
+char c = q.dequeue();
 q.enqueue(c);
 q.enqueue(c);
 q.enqueue('d');
 
-c = s.dequeue();
+c = q.dequeue();
 q.enqueue(c);
 q.enqueue(c);
 q.enqueue('z');
